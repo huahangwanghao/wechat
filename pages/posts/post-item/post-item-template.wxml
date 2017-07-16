@@ -1,0 +1,18 @@
+<template name="postItem">
+ <view class="post-container">
+      <view class="post-author-date">
+        <image class="post-author" src="{{author_image}}"></image>
+        <text class="post-date">{{date}}</text>
+      </view>
+      <text class="post-title">{{title}}</text>
+      <image class="post-image" src="{{image}}"></image>
+      <text class="post-content">在风平浪静的时候，我喜欢在海边散步，浪花梳理着脚边的细沙，海风轻轻地抚摸着，抬头望着大海，此时的浪花像一只展翅欲飞的蝴蝶；我也喜欢刚大海的汹涌澎湃的气势，这时候的大海成了在战场上奋勇杀敌的大将军，有着不可抵挡的气势</text>
+      <view class="post-like">
+        <image class="post-like-image" src="/images/icons/read.png"></image>
+        <text class="post-like-font">12</text>
+        <image class="post-like-image" src="/images/icons/pinglun.png"></image>
+        <text class="post-like-font">43</text>
+      </view>
+     </view>
+        
+</template>>

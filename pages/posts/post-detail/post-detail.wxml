@@ -1,0 +1,21 @@
+<view class="container">
+  <image class="head-image" src="{{play?postData_key.music.coverImgUrl:postData_key.headImgSrc}}"></image>
+  <image wx:if="{{play}}" catchtap="musicTap" class="audio" src="/images/icons/zanting.png"></image>
+  <image wx:else catchtap="musicTap" class="audio" src="/images/icons/yinyue.png"></image>
+  <view class="author-date">
+    <image class="head" src="/images/head/t1.png"></image>
+    <text class="author">{{postData_key.author}}</text>
+    <text class="const-text">发表于</text>
+    <text class="date">{{postData_key.dateTime}}</text>
+  </view>
+  <text class="title">{{postData_key.title}}</text>
+  <view class="tool">
+    <view class="circle-image">
+      <image wx:if="{{postData_key.collected}}" catchtap="onTap" src="/images/icons/shoucang.png"></image>
+      <image  wx:else  src="/images/icons/shoucang_un.png" catchtap="onTap"></image>
+      <image catchtap="onShareTap" class="share-image" src="/images/icons/fenxiang.png"></image>
+    </view>
+    <view class="zhixian"></view>
+  </view>
+  <text class="detail">{{postData_key.detail}}</text>
+</view>
