@@ -5,4 +5,8 @@ git commit -m "init"
 git remote add origin https://github.com/huahangwanghao/wechat.git
 git push -u origin master
 
+---------------------
+git init 
+ git pull https://github.com/huahangwanghao/wechat.git
+
 
